@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+body{
+    margin: auto;
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(255, 253, 250);
+    /* font: inherit; */
+}
+
+/* Typography */
+a{
+    text-decoration: none;
+    color: rgb(93, 95, 121);
+    cursor: pointer;
+}
+a:hover{
+    color: hsl(5, 85%, 63%);
+}
+li{
+    list-style: none;
+}
+
+_
+/* header */
+header{
+    margin: 50px 0;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.mobile-header{
+    display: none;
+}
+
+
+/* main */
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+.left-main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.left-main .hero-banner-img2{
+    display: none;
+}
+.below-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.below-img h2{
+    font-size: 60px;
+    color: rgb(0, 0, 26);
+    line-height: 3.5rem;
+}
+.p-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.p-btn p{
+    color: rgb(93, 95, 121);
+    line-height:1.5rem;
+}
+.p-btn button{
+    padding: 16px 16px;
+    color: rgb(255, 253, 250);
+    letter-spacing: 5px;
+    background-color: rgb(241, 94, 80);
+    border: none;
+    cursor: pointer;
+    width: 60%;
+}
+.p-btn button:hover{
+    background-color:rgb(0, 0, 26);
+}
+.right-main{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    width: 100%;
+    padding: 30px;
+    line-height: 3rem;
+}
+.right-main h2{
+    color: rgb(233, 171, 83);
+    font-size: 35px;
+}
+.right-main h3:hover{
+    color: rgb(233, 171, 83);
+    cursor: pointer;
+}
+.right-main p{
+    color: rgb(197, 198, 206);
+    text-align: left;
+    line-height: 30px;
+}
+
+
+/* section */
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 20px; */
+    width: 100%;
+    /* border: solid 1px #000; */
+    margin: 50px 0px;
+}
+.new{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.new div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.new div h2{
+    color: rgb(197, 198, 206);
+    font-size: 40px;
+    font-weight:normal;
+}
+.new div h3{
+    font-weight: 800;
+    line-height: 20px;
+}
+.new div h3:hover{
+    color: rgb(241, 94, 80);
+    cursor: pointer;
+}
+.new div p{
+    line-height: 25px;
+    color: rgb(93, 95, 121);
+}
+picture img{
+    width: 150px;
+}
+
+/* Responsiveness */
+@media screen and (max-width :400px) {
+    header{
+        display: none;
+    }
+    .mobile-header{
+        display: block;
+    }
+    .mobile-header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-banner-img1{
+        display: none;
+    }
+    .left-main .hero-banner-img2{
+        display: block;
+    }
+    .below-img{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    }
+    .below-img h2{
+    font-size: 40px;
+    color: rgb(0, 0, 26);
+    line-height: 2.5rem;
+    }
+    .p-btn p{
+        font-size: 14px;
+    }
+    .right-main{
+        width: 100%;
+    }
+    section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin: 50px 0px;
+    }
+}
