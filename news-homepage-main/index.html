@@ -71,16 +71,26 @@
 
   <!-- header mobile -->
 
-  <header class="mobile-header">
+  <div class="mobile-header">
+    <div class="div-content" id="div-content">
+      <img src="./assets/images/icon-menu-close.svg" alt="close-btn" onclick="closeNav();">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </div>
     <nav>
       <div class="logo">
-        <img src="./assets/images/logo.svg" alt="logo">
+        <img src="./assets/images/logo.svg" alt="logo" onclick="closeNav();">
       </div>
       <div>
-        <img src="./assets/images/icon-menu.svg" alt="hambuger-icon">
+        <img src="./assets/images/icon-menu.svg" alt="hambuger-icon" onclick="openNav();">
       </div>
     </nav>
-  </header>
+  </div>
 
 <!-- main -->
 
@@ -157,5 +167,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">NZANGMENE DIT DIBRIL HASSAN</a>.
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
